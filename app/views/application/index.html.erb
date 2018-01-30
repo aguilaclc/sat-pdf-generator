@@ -1,0 +1,23 @@
+<h2>PDF Generator</h2>
+
+<%= form_tag('/pdf', multipart: true, class: 'row') do %>
+  <div class="col s8">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <%= file_field_tag 'xml' %>
+      </div>
+
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </div>
+
+  <div class="col s4">
+    <button class="btn btn-align" type="submit" name="action">
+      Create
+      <%= material_icon.send.css_class('right') %>
+    </button>
+  </div>
+<% end %>

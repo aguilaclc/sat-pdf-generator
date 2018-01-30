@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<fop version="1.0">
+  <fonts>
+    <substitutions>
+      <substitution>
+        <from font-family="Inconsolata" font-weight="400"/>
+        <to font-family="Inconsolata-Regular"/>
+      </substitution>
+      <substitution>
+        <from font-family="Inconsolata" font-weight="700"/>
+        <to font-family="Inconsolata-Bold"/>
+      </substitution>
+    </substitutions>
+  </fonts>
+  <renderers>
+    <renderer mime="application/pdf">
+      <fonts>
+        <auto-detect/>
+      </fonts>
+    </renderer>
+  </renderers>
+</fop>
